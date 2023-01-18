@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome to kokoa clone</title>
 </head>
+
 <body>
-    <div id="satus-bar">
-       <div class="status-bar__colum">
-        <span> NO service</span>
-        <i class="fa-solid fa-wifi"></i>
-       </div> 
-       <div class="status-bar__colum">
-        <span>18:43</span>
-       </div> 
-       <div class="status-bar__colum">110%</div> 
-       <i class="fa-solid fa-bolt"></i>
-       <i class="fa-solid fa-battery-full"></i>
-       <div class="status-bar__colum"></div> 
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span> NO service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">110%
+            <i class="fa-solid fa-bolt"></i>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+        </div> 
     </div>
 
     <header class="welcome-header">
-        <h1 class="welcome header__titile">welcome to kokoa clone</h1>
+        <h1 class="welcome-header__titile">welcome to kokoa clone</h1>
         <p class="welcome-header__text">If tou have a kokoa accont, log in wigh your email or phone number.</p>
     </header>
 
-    <form id="loging-form">
-        <input type="text" placeholder="Email or phone number"/>
-        <input type="password" placeholder="password"/>
-        <input type="submit" value="log In"/>
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" />
+        <input type="password" placeholder="password" />
+        <input type="submit" value="log In" />
         <a href="#">find kokoa account or password</a>
     </form>
 
