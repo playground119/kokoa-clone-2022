@@ -10,11 +10,45 @@
 
 <main class="main-screen main-chat">
 
-    <div class="chats__timestemp">
+    <div class="chat__timestemp">
         Tuesday, June 30,2020
     </div>
 
+    <div class="message-row">
+        <img src="screenshot/nicco2.jpg">
+        <div class="message-row__content">
+            <span class="message__author">Nicolas</span>
+            <div class="message__info">
+                <span class="message__bubble">Hi!</span>
+                <span class="message__time">21:27</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-row message-row--own">
+        <div class="message-row__content">
+            <div class="message__info">
+                <span class="message__bubble">Hi nice to meet you</span>
+                <span class="message__time">21:27</span>
+            </div>
+        </div>
+    </div>
+
 </main>
+
+<form class="replay">
+    <div class="replay__column">
+        <i class="fa-regular fa-square-plus"></i>
+        
+    </div>
+    <div class="replay__column">
+        <input type="text" placeholder="write a message ..."/>
+        <i class="fa-regular fa-face-smile"></i>
+        <button>
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+</form>
 
 <body id="chat-screen">
     <div class="status-bar">
@@ -23,7 +57,7 @@
             <i class="fa-solid fa-wifi"></i>
         </div>
         <div class="status-bar__column">
-            <span></span>
+            <span>18:43</span>
         </div>
         <div class="status-bar__column">110%
             <i class="fa-solid fa-bolt"></i>
