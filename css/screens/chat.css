@@ -118,6 +118,7 @@
     padding: 5px 25px;
     box-sizing: border-box;
     align-items: center;
+    transition:transform all 0.3s ease-in-out;
 
 }
 
@@ -141,6 +142,8 @@
     width: 100%;
     border: var(--main-border);
     border-radius: 20px;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -160,7 +163,7 @@
     border: none;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
 .reply__column button i {
@@ -173,10 +176,23 @@
 }
 
 
-.reply:focus-within .replay__column:first-child {
+.reply .replay__column:first-child ,
+.reply .fa-face-smile,
+.reply button {
+    transform: opacity 0.3s ease-in-out;
+}
+     
+.reply:focus-within .replay__column:first-child ,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
     opacity: 0;
-    visibility: hidden;
-
 }
 
-.
+.reply:focus-within input {
+    width: 95vw;
+    transform: translateX(-13%) translateY(-80px);
+}
+
+.reply:focus-within {
+    transform:  translateY(80px);
+}
